@@ -1179,7 +1179,13 @@ img::-moz-selection {
     .post-preview > a > .post-title{
         font-weight: normal;
     }
-    .post-preview {
+    /* .post-preview {
+        margin-top: 30%;
+    } */
+}
+
+@media (max-width: 500px) {
+    .post-preview:nth-child(1) {
         margin-top: 30%;
     }
 }
