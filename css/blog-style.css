@@ -1,9 +1,9 @@
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .post-cont-iner,
     .sidebar-container {
-        padding-right: 5%;
+        padding-right: 2%;
     }
-}
+} */
 
 
 hr{
@@ -553,7 +553,7 @@ a:focus {
 
 footer {
     font-size: 20px;
-    padding: 50px 0 65px;
+    padding: 50px 0 5px;
 }
 
 footer .list-inline {
