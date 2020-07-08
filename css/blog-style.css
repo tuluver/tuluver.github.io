@@ -1284,15 +1284,20 @@ img::-moz-selection {
     padding:7px 20px;
 }
 .profile-card-5 .card-img-block {
-    width: 91%;
     margin: 0 auto;
     position: relative;
     top: -20px;
+    width: 200px;
+    min-height: 200px;
+    max-height: auto;
+    padding: 3px;
     
 }
 .profile-card-5 .card-img-block img{
     border-radius:5px;
     box-shadow:0 0 10px rgba(0,0,0,0.63);
+    max-width: 100%;
+    height: auto;
 }
 .profile-card-5 h5{
     color:#4E5E30;
