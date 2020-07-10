@@ -45,6 +45,7 @@
     <link rel="alternate" type="application/atom+xml" title="ತುಳುವೆರ್" href="/atom.xml">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>
         
         Contact｜tuluver.github.io
@@ -113,17 +114,17 @@
                     
                         
 							
+						
+                    
+                        
+							
+						
+                    
+                        
+							
                         <li>
                             <a href="/authors/">Authors</a>
                         </li>
-							
-						
-                    
-                        
-							
-						
-                    
-                        
 							
 						
                     
@@ -289,6 +290,22 @@
 <!-- Custom Theme JavaScript -->
 
 <script src="/js/blog.js"></script>
+
+
+
+<script src="/js/search.js"></script>
+
+
+<!-- Search functionality -->
+<script type="text/javascript">      
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+        search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    console.log(path);
+    searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
 
 
 <!-- async load function -->

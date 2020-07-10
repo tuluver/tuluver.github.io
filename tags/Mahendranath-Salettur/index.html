@@ -43,6 +43,7 @@
     <link rel="alternate" type="application/atom+xml" title="ತುಳುವೆರ್" href="/atom.xml">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>
         
         tuluver.github.io
@@ -111,17 +112,17 @@
                     
                         
 							
+						
+                    
+                        
+							
+						
+                    
+                        
+							
                         <li>
                             <a href="/authors/">Authors</a>
                         </li>
-							
-						
-                    
-                        
-							
-						
-                    
-                        
 							
 						
                     
@@ -205,6 +206,10 @@
         </p>
         
         <h3 class="post-subtitle">
+            Pudar badalna tulunaada daivolu
+        </h3>
+        
+        <h3 class="post-subtitle">
                 K Mahendranath Salethoor
         </h3>
         <div class="post-content-preview">
@@ -247,18 +252,23 @@
                         <h5 style="text-align: center;">Our Authors</h5>
                         <ul class="list-inline" style="text-align: center;">
                             
-                                <li class="home-author-li"><a href="/mahendranath-salethoor/"><img src="/images/salettur.jpeg" alt="Avatar" class="avatar home-list"></a></li>
+                                <li class="home-author-li"><a href="/mahendranath-salethoor/" title="K Mahendranath Salethoor"><img src="/images/salettur.jpeg" alt="K Mahendranath Salethoor" class="avatar home-list"></a></li>
                             
-                                <li class="home-author-li"><a href="/ashwin-mulky/"><img src="/images/ash.jpg" alt="Avatar" class="avatar home-list"></a></li>
+                                <li class="home-author-li"><a href="/ashwin-mulky/" title="Ashwin Poojary"><img src="/images/ash.jpg" alt="Ashwin Poojary" class="avatar home-list"></a></li>
                             
-                                <li class="home-author-li"><a href="/sandeep-poojary/"><img src="/images/sandeep.jpg" alt="Avatar" class="avatar home-list"></a></li>
+                                <li class="home-author-li"><a href="/sandeep-poojary/" title="Sandeep Poojary"><img src="/images/sandeep.jpg" alt="Sandeep Poojary" class="avatar home-list"></a></li>
                             
                         </ul>   
             
                         <div style="text-align: center;color: blueviolet;">
                             <a type="button" class="btn btn-secondary btn-sm" href="/authors">See All Authors</a>
                         </div>
- 
+            </section>
+            <section  style="padding: 15% 18px; width: 100%;">
+                <div id="site_search" class="main-content-wrap">
+                    <input type="text" id="local-search-input" name="q" results="0" placeholder="search ..." class="form-control input--xlarge"/>
+                    <div id="local-search-result"></div>
+                </div>
             </section>
 
             <!-- Featured Tags  -->
@@ -328,6 +338,22 @@
 <!-- Custom Theme JavaScript -->
 
 <script src="/js/blog.js"></script>
+
+
+
+<script src="/js/search.js"></script>
+
+
+<!-- Search functionality -->
+<script type="text/javascript">      
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+        search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    console.log(path);
+    searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
 
 
 <!-- async load function -->
