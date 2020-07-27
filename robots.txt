@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /authors/
-Disallow: /categories/
-Disallow: /tags/
+Allow: /
 
 Sitemap: https://tuluver.github.io/sitemap.xml
