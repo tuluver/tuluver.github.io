@@ -1321,4 +1321,12 @@ img::-moz-selection {
     border-color:#4E5E30;
 }
 
+.whatsapp-share {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+      .whatsapp-share {display: inline;}
+  }
 
