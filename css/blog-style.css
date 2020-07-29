@@ -1327,6 +1327,9 @@ img::-moz-selection {
   @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 480px){ 
-      .whatsapp-share {display: inline;}
+      .whatsapp-share {
+          display: inline;
+          text-align: left;
+        }
   }
 
