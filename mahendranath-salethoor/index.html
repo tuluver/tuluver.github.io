@@ -255,6 +255,94 @@
     }
 }
 
+/*slider*/
+.img-slider {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container-slider {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row-slider:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column-slider {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 </style>
 
 <!-- Page Header -->
@@ -298,14 +386,139 @@
                         <a href="/tags/#AshwinMulky">See All Posts</a>
                     </li>
             </ul> -->
+            
+                <hr /><br />
+            <div style="box-sizing: border-box; margin: 5%; text-align: left;">
+                    <h2 style="text-align:center">Photo Gallery</h2>
+                    <div class="container-slider">
+                    
+                    
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 9</div>
+                            <img class="mg-slider" src="/images/satya-sahanta-01.jpg" style="width:100%">
+                        </div>
+                        
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 9</div>
+                            <img class="mg-slider" src="/images/satya-sahanta-02.jpg" style="width:100%">
+                        </div>
+                        
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 9</div>
+                            <img class="mg-slider" src="/images/jogi-sahitya-01.jpg" style="width:100%">
+                        </div>
+                        
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 9</div>
+                            <img class="mg-slider" src="/images/jogi-sahitya-02.jpg" style="width:100%">
+                        </div>
+                        
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 9</div>
+                            <img class="mg-slider" src="/images/jogi-sahitya-03.jpg" style="width:100%">
+                        </div>
+                        
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 9</div>
+                            <img class="mg-slider" src="/images/datta_nagara_01.jpg" style="width:100%">
+                        </div>
+                        
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">7 / 9</div>
+                            <img class="mg-slider" src="/images/datta_nagara_02.jpg" style="width:100%">
+                        </div>
+                        
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">8 / 9</div>
+                            <img class="mg-slider" src="/images/datta_nagara_03.jpg" style="width:100%">
+                        </div>
+                        
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">9 / 9</div>
+                            <img class="mg-slider" src="/images/tulu_sahitya_ratna_01.JPG" style="width:100%">
+                        </div>
+                        
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+    
+                    <div class="row row-slider">
+                        
+                        
+                            <div class="column column-slider">
+                                <img class="img-slider demo cursor" src="/images/satya-sahanta-01.jpg" style="width:60px; height: 40px;" onclick="currentSlide(1)" alt="ಸತ್ಯಶಾಂತ ಪ್ರತಿಷ್ಠಾನದ ಮಾನಾದಿಗೆ">
+                            </div>
+                            
+                        
+                            <div class="column column-slider">
+                                <img class="img-slider demo cursor" src="/images/satya-sahanta-02.jpg" style="width:60px; height: 40px;" onclick="currentSlide(2)" alt="ಸತ್ಯಶಾಂತ ಪ್ರತಿಷ್ಠಾನದ ಮಾನಾದಿಗೆ">
+                            </div>
+                            
+                        
+                            <div class="column column-slider">
+                                <img class="img-slider demo cursor" src="/images/jogi-sahitya-01.jpg" style="width:60px; height: 40px;" onclick="currentSlide(3)" alt="ಕೆ ಮಹೇಂದ್ರನಾಥ್ ಸಾಲೆತ್ತೂರ್ ಜೋಗಿ ಸಾಹಿತ್ಯಶ್ರೀ ಪ್ರಶಸ್ತಿ">
+                            </div>
+                            
+                        
+                            <div class="column column-slider">
+                                <img class="img-slider demo cursor" src="/images/jogi-sahitya-02.jpg" style="width:60px; height: 40px;" onclick="currentSlide(4)" alt="ರಾಜ್ಯ ಮಟ್ಟದ ಜೋಗಿ ಸಾಹಿತ್ಯ ಶ್ರೀ ಪಡೆಯಿನ ಪೊರ್ತು">
+                            </div>
+                            
+                        
+                            <div class="column column-slider">
+                                <img class="img-slider demo cursor" src="/images/jogi-sahitya-03.jpg" style="width:60px; height: 40px;" onclick="currentSlide(5)" alt="ಎನ್ನ ಗುರ್ಕಾರ್ದಿನೊಟ್ಟುಗು ಪ್ರಶಸ್ತಿ ಪಟ್ಟೊನ್ನಿ">
+                            </div>
+                            
+                        
+                            <div class="column column-slider">
+                                <img class="img-slider demo cursor" src="/images/datta_nagara_01.jpg" style="width:60px; height: 40px;" onclick="currentSlide(6)" alt="ಮಹೇಂದ್ರನಾಥ್ ಸಾಲೆತ್ತೂರ್ ರೆಗ್ ದತ್ತನಗರ ಕುಡ್ಲ ನಿವಾಸಿಲೆರ್ದ್ ಮಾನದಿಗೆ">
+                            </div>
+                            
+                        
+                            <div class="column column-slider">
+                                <img class="img-slider demo cursor" src="/images/datta_nagara_02.jpg" style="width:60px; height: 40px;" onclick="currentSlide(7)" alt="ಮಹೇಂದ್ರನಾಥ್ ಸಾಲೆತ್ತೂರ್ ರೆಗ್ ದತ್ತನಗರ ಕುಡ್ಲ ನಿವಾಸಿಲೆರ್ದ್ ಮಾನದಿಗೆ">
+                            </div>
+                            
+                        
+                            <div class="column column-slider">
+                                <img class="img-slider demo cursor" src="/images/datta_nagara_03.jpg" style="width:60px; height: 40px;" onclick="currentSlide(8)" alt="ಮಹೇಂದ್ರನಾಥ್ ಸಾಲೆತ್ತೂರ್ ರೆಗ್ ದತ್ತನಗರ ಕುಡ್ಲ ನಿವಾಸಿಲೆರ್ದ್ ಮಾನದಿಗೆ">
+                            </div>
+                            
+                        
+                            <div class="column column-slider">
+                                <img class="img-slider demo cursor" src="/images/tulu_sahitya_ratna_01.JPG" style="width:60px; height: 40px;" onclick="currentSlide(9)" alt="ಮಹೇಂದ್ರನಾಥ್ ಸಾಲೆತ್ತೂರ್ ಮೇರೆಗ್ &#34;ತುಳು ಸಾಹಿತ್ಯ ರತ್ನ&#34; ಪ್ರಶಸ್ತಿ">
+                            </div>
+                            
+                        
+                       
+                    </div>
+                    </div>
+                 </div>
+                 
+                 
+                    <hr /><br />
+                    <div style="text-align: center;">
+                       Youtube Channel : THULUORIPUGA
+                        <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=THULUORIPUGA" width="280" height="200" style="display: inline-block;"></iframe>
+                    </div>
+                    
             </div>
+            
     </div>
 </div>
-<!-- <div class="container">
-    <div class="row">
-            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=THULUORIPUGA" width="480" height="400"></iframe>
-    </div>
-</div> -->
 
 <!-- Footer -->
 <!-- Footer -->
@@ -368,6 +581,10 @@
 
 
 <script src="/js/search.js"></script>
+
+
+
+<script src="/js/slider.js"></script>
 
 
 <!-- Search functionality -->
