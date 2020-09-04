@@ -90,9 +90,14 @@
     header.intro-header {
         background-image: url('')
     }
+  @media print {
+  html, body {
+    display: none;  /* hide whole page */
+  }
+}
 </style>
 <!-- hack iOS CSS :active style -->
-<body ontouchstart="" class="animated fadeIn">
+<body ontouchstart="return false;" class="animated fadeIn" onmousedown='return false;' onselectstart='return false;'>
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
 " data-ishome = "true" >
@@ -129,23 +134,23 @@
                     
                         
 							
-                        <li>
-                            <a href="/authors/">Authors</a>
-                        </li>
-							
-						
-                    
-                        
-							
-						
-                    
-                        
-							
 								
 							
 						
                     
                         
+							
+						
+                    
+                        
+							
+						
+                    
+                        
+							
+                        <li>
+                            <a href="/authors/">Authors</a>
+                        </li>
 							
 						
                     
@@ -490,21 +495,6 @@
                     
                     
                     
-                    <a href="/tags/#Bermer" title="Bermer"
-                       rel="2">Bermer</a>
-                    
-                    
-                    
-                    <a href="/tags/#lekkesiri" title="lekkesiri"
-                       rel="2">lekkesiri</a>
-                    
-                    
-                    
-                    <a href="/tags/#naage" title="naage"
-                       rel="2">naage</a>
-                    
-                    
-                    
                     <a href="/tags/#Attemi" title="Attemi"
                        rel="1">Attemi</a>
                     
@@ -525,13 +515,18 @@
                     
                     
                     
-                    <a href="/tags/#poli-leppuni" title="poli-leppuni"
-                       rel="1">poli-leppuni</a>
+                    <a href="/tags/#Bermer" title="Bermer"
+                       rel="2">Bermer</a>
                     
                     
                     
-                    <a href="/tags/#Uje_bhasma" title="Uje_bhasma"
-                       rel="1">Uje_bhasma</a>
+                    <a href="/tags/#lekkesiri" title="lekkesiri"
+                       rel="2">lekkesiri</a>
+                    
+                    
+                    
+                    <a href="/tags/#naage" title="naage"
+                       rel="2">naage</a>
                     
                     
                     
@@ -555,13 +550,23 @@
                     
                     
                     
+                    <a href="/tags/#nagaradhane" title="nagaradhane"
+                       rel="3">nagaradhane</a>
+                    
+                    
+                    
                     <a href="/tags/#Tuluver" title="Tuluver"
                        rel="1">Tuluver</a>
                     
                     
                     
-                    <a href="/tags/#nagaradhane" title="nagaradhane"
-                       rel="3">nagaradhane</a>
+                    <a href="/tags/#Uje_bhasma" title="Uje_bhasma"
+                       rel="1">Uje_bhasma</a>
+                    
+                    
+                    
+                    <a href="/tags/#poli-leppuni" title="poli-leppuni"
+                       rel="1">poli-leppuni</a>
                     
                     
                     
