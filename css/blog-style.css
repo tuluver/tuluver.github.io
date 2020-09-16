@@ -1092,6 +1092,7 @@ img::-moz-selection {
     overflow: auto;
     z-index:1;
     background-color: #fff;
+    width: 20%;
 }
 
 .navbar-custom.is-fixed {
