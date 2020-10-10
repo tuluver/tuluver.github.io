@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://tuluver.github.io/about/</loc>
+        <lastmod>2020-10-10T08:55:35.173Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://tuluver.github.io/404.html</loc>
         <lastmod>2020-09-28T12:17:46.355Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -24,13 +31,6 @@
     <url>
         <loc>https://tuluver.github.io/privacy-policy/</loc>
         <lastmod>2020-09-24T12:08:42.604Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://tuluver.github.io/about/</loc>
-        <lastmod>2020-09-24T10:38:40.634Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
